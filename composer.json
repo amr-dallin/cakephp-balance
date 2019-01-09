@@ -1,0 +1,27 @@
+{
+    "name": "josegonzalez/cakephp-balance",
+    "description": "CakePHP plugin to account for the family budget",
+    "type": "cakephp-plugin",
+    "keywords": [
+        "cakephp",
+        "balance"
+    ],
+    "homepage": "https://github.com/amr-dallin/cakephp-balance",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marat Dallin",
+            "email": "mail@dallin.uz",
+            "homepage": "https://dallin.uz",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "composer/installers": "*"
+    },
+    "support": {
+        "email": "mail@dallin.uz",
+        "issues": "https://github.com/amr-dallin/cakephp-balance/issues",
+        "source": "https://github.com/amr-dallin/cakephp-balance"
+    }
+}
