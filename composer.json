@@ -1,11 +1,8 @@
 {
     "name": "amr-dallin/cakephp-balance",
-    "description": "CakePHP plugin to account for the family budget",
+    "description": "CakePHP plugin для учёта семейного бюджета",
     "type": "cakephp-plugin",
-    "keywords": [
-        "cakephp",
-        "balance"
-    ],
+    "keywords": ["cakephp", "balance", "coreui"],
     "homepage": "https://github.com/amr-dallin/cakephp-balance",
     "license": "MIT",
     "authors": [
@@ -13,15 +10,21 @@
             "name": "Marat Dallin",
             "email": "mail@dallin.uz",
             "homepage": "https://dallin.uz",
-            "role": "Maintainer"
+            "role": "Author"
         }
     ],
+    "config": {
+        "preferred-install": "dist"
+    },
     "require": {
-        "composer/installers": "*"
+        "composer/installers": "^1.0.0"
     },
     "support": {
         "email": "mail@dallin.uz",
         "issues": "https://github.com/amr-dallin/cakephp-balance/issues",
         "source": "https://github.com/amr-dallin/cakephp-balance"
+    },
+    "extra": {
+        "installer-name": "Balance"
     }
 }
