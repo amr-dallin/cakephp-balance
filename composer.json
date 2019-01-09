@@ -1,5 +1,5 @@
 {
-    "name": "josegonzalez/cakephp-balance",
+    "name": "amr-dallin/cakephp-balance",
     "description": "CakePHP plugin to account for the family budget",
     "type": "cakephp-plugin",
     "keywords": [
