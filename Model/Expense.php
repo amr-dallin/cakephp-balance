@@ -186,12 +186,13 @@ class Expense extends BalanceAppModel
                 $categories,
                 $excess
             ),
-            'order' => array('Expense.date_expense' => 'ASC'),
             'fields' => array(
                 'SUM(Expense.amount) as amount',
                 'DATE_FORMAT(Expense.date_expense, "%M %Y") as date',
             ),
-            'group' => array('MONTH(Expense.date_expense)')
+            'contain' => array(),
+            'group' => array('date'),
+            'order' => array('date' => 'ASC')
         ));
     }
     

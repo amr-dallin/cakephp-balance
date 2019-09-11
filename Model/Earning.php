@@ -115,12 +115,13 @@ class Earning extends BalanceAppModel
     {
         return $this->find('all', array(
             'conditions' => array('Earning.currency_id' => $currency_id),
-            'order' => array('Earning.date_earning' => 'ASC'),
             'fields' => array(
                 'SUM(Earning.amount) as amount',
                 'DATE_FORMAT(Earning.date_earning, "%M %Y") as date',
             ),
-            'group' => 'MONTH(Earning.date_earning)'
+            'contain' => array(),
+            'group' => array('date'),
+            'order' => array('date' => 'ASC')
         ));
     }
 }
